@@ -9,3 +9,12 @@ likes(bill, cindy).
 color(rose, red).
 % E. John owns gold.
 owns(john, gold).
+
+
+
+Output:
+?-consult(‘prog1’).
+?- likes(ram,X).
+X = mango
+?-owns(Y,gold).
+Y=john
