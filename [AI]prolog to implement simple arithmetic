@@ -1,0 +1,21 @@
+% Define addition
+calculate(X, '+', Y, Result) :-
+    Result is X + Y.
+
+% Define subtraction
+calculate(X, '-', Y, Result) :-
+    Result is X - Y.
+
+% Define multiplication
+calculate(X, '*', Y, Result) :-
+    Result is X * Y.
+
+% Define division
+calculate(X, '/', Y, Result) :-
+    Y \= 0,              % Prevent division by zero
+    Result is X / Y.
+
+ 
+Example Queries:
+?- calculate(10, '+', 5, R).
+R = 15.
